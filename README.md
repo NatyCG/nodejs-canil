@@ -1,6 +1,6 @@
 # Site de Canil - Adoção
 
-### Desenvolvido em JavaScript e Node.js
+### Desenvolvido em JavaScript e Node.js (versão 16)
 
 Projeto utilizado como base de ensino, e treinamento, dos cursos de **Informática**,
 principalmente de nível técnico - **Soitech**.
@@ -19,6 +19,6 @@ O nosso projeto tem como base projetos do curso [B7Web](https://b7web.com.br/)
 
 `npm run start-dev`
 
-Autor: **Nataly Araujo**
+Autor: **Nataly Lima**
 
 _Estes códigos estão sobre a licença_ **MIT**
