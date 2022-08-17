@@ -1,5 +1,18 @@
-import { Request, Response } from "express"
+const express = require("express");
+const { pet } = require("../model/pet");
+const { createMenuObject} = require("../helpers/createMenuObject");
 
-export const search = (req. res ) => {
-    //res.render("pages/page")
+const search = (req, res ) => {
+    let query = req.query.q;
+    if(!query){
+        res.redirect('/');
+        return;
+    }
+    let list = pet.getFronName(query);
+    res.render("pages/page", {
+        list,
+        query
+    });
 }
+
+module.exports.search = search;

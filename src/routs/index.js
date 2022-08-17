@@ -1,14 +1,16 @@
-import { Router } from "express"
-import * as PageController from "../controlles/pageController"
-import * as SearchController from "../controlles/searchController"
+const express = require("express"); 
+const Router = require("Router");
+const PageController = require("../controlles/pageController");
+const SearchController = require("../controlles/searchController");
 
-const router = Router()
+const router = Router();
 
-router.get("/", PageController.home)
-router.get("/dogs", PageController.dogs)
-router.get("/cats", PageController.cats)
-router.get("/fishes", PageController.fishes)
+router.get("/", PageController.home);
+router.get("/dogs", PageController.dogs);
+router.get("/cats", PageController.cats);
+router.get("/fishes", PageController.fishes);
 
-router.get("/search", PageController.search)
+router.get("/search", SearchController.search);
 
-export default router
+module.exports = Router();
+module.exports = router;
